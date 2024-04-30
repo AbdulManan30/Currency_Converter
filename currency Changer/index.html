@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Chenger</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h2>Currency Converter</h2>
+        <form id="form">
+          <div class="amount">
+            <p>Enter Amount</p>
+            <input id="input" value="100" type="text" />
+          </div>
+          <div class="dropdown">
+            <div class="from">
+              <p>From</p>
+              <div class="select_container">
+                <img
+                  id="flag_img"
+                  src="https://flagsapi.com/US/flat/64.png"
+                  alt="Flag"
+                />
+                <select name="from" id="my_from"></select>
+              </div>
+            </div>
+            <lord-icon
+              src="https://cdn.lordicon.com/swcqkzdc.json"
+              trigger="hover"
+              colors="primary:#000000"
+              style="width: 50px; height: 50px"
+            >
+            </lord-icon>
+            <div class="to">
+              <p>To</p>
+              <div class="select_container">
+                <img
+                  id="flag_img"
+                  src="https://flagsapi.com/PK/flat/64.png"
+                  alt="Flag"
+                />
+                <select name="to" id="my_to"></select>
+              </div>
+            </div>
+          </div>
+          <h3 id="final_result"></h3>
+          <button id="btn">Convert</button>
+        </form>
+      </div>
+    </main>
+    <script src="code.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
